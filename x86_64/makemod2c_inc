@@ -1,0 +1,264 @@
+./beforestep_py.c: ../mods_2//beforestep_py.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "beforestep_py.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./beforestep_py.o: ./beforestep_py.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaDynamics_E2.c: ../mods_2//CaDynamics_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics_E2.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./CaDynamics_E2.o: ./CaDynamics_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA.c: ../mods_2//Ca_HVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ca_HVA.o: ./Ca_HVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVAst.c: ../mods_2//Ca_LVAst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_LVAst.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ca_LVAst.o: ./Ca_LVAst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./g_total.c: ../mods_2//g_total.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "g_total.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./g_total.o: ./g_total.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./hh_guy.c: ../mods_2//hh_guy.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "hh_guy.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./hh_guy.o: ./hh_guy.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human.c: ../mods_2//Ih_human.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human.o: ./Ih_human.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts2.c: ../mods_2//Ih_human_shifts2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts2.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts2.o: ./Ih_human_shifts2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts3.c: ../mods_2//Ih_human_shifts3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts3.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts3.o: ./Ih_human_shifts3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts_freeze.c: ../mods_2//Ih_human_shifts_freeze.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts_freeze.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts_freeze.o: ./Ih_human_shifts_freeze.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts.c: ../mods_2//Ih_human_shifts.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts.o: ./Ih_human_shifts.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts_mul_add.c: ../mods_2//Ih_human_shifts_mul_add.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts_mul_add.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts_mul_add.o: ./Ih_human_shifts_mul_add.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih_human_shifts_mul_add_uni.c: ../mods_2//Ih_human_shifts_mul_add_uni.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih_human_shifts_mul_add_uni.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih_human_shifts_mul_add_uni.o: ./Ih_human_shifts_mul_add_uni.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../mods_2//Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im.c: ../mods_2//Im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Im.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Im.o: ./Im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./kd3h5.c: ../mods_2//kd3h5.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kd3h5.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./kd3h5.o: ./kd3h5.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Pst.c: ../mods_2//K_Pst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Pst.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./K_Pst.o: ./K_Pst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Tst.c: ../mods_2//K_Tst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Tst.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./K_Tst.o: ./K_Tst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./na3.c: ../mods_2//na3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "na3.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./na3.o: ./na3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap_Et2.c: ../mods_2//Nap_Et2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nap_Et2.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./Nap_Et2.o: ./Nap_Et2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTa_t.c: ../mods_2//NaTa_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTa_t.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./NaTa_t.o: ./NaTa_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTs2_t.c: ../mods_2//NaTs2_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTs2_t.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./NaTs2_t.o: ./NaTs2_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./NMDA.c: ../mods_2//NMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NMDA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./NMDA.o: ./NMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPA.c: ../mods_2//ProbAMPA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbAMPA.o: ./ProbAMPA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA2_ratio.c: ../mods_2//ProbAMPANMDA2_ratio.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA2_ratio.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbAMPANMDA2_ratio.o: ./ProbAMPANMDA2_ratio.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_EMS.c: ../mods_2//ProbAMPANMDA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA_EMS.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbAMPANMDA_EMS.o: ./ProbAMPANMDA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA.c: ../mods_2//ProbAMPANMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbAMPANMDA.o: ./ProbAMPANMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAAB_EMS.c: ../mods_2//ProbGABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAAB_EMS.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbGABAAB_EMS.o: ./ProbGABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAA_EMS.c: ../mods_2//ProbGABAA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAA_EMS.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbGABAA_EMS.o: ./ProbGABAA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAA.c: ../mods_2//ProbGABAA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbGABAA.o: ./ProbGABAA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbNMDA.c: ../mods_2//ProbNMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbNMDA.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./ProbNMDA.o: ./ProbNMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK_E2.c: ../mods_2//SK_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SK_E2.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./SK_E2.o: ./SK_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1.c: ../mods_2//SKv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods_2";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1.mod" -o "/ems/elsc-labs/segev-i/yoni.leibner/PycharmProjects/Hippocampus_Basu/x86_64")
+
+./SKv3_1.o: ./SKv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods_2" $(INCLUDES) -fPIC -c $< -o $@
+
